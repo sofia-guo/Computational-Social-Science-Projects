@@ -1,0 +1,7 @@
+git clone 
+git@github.com:sofia-guo/Computational-Social-Science-Projects.git
+mkdir "Project 1"
+cd "Project 1"
+touch "SGproject1.txt"
+
+
