@@ -4,6 +4,11 @@ output: pdf_document
 author: Sofia Guo, working with Stacy Chen
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = T, eval = T, message = F, warning = F)
+```
+
+
 # Introduction
 
 In this project, you will explore the question of whether college education causally affects political participation. Specifically, you will use replication data from \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1409483}{Who Matches? Propensity Scores and Bias in the Causal Eﬀects of Education on Participation} by former Berkeley PhD students John Henderson and Sara Chatfield. Their paper is itself a replication study of \href{https://www.jstor.org/stable/10.1017/s0022381608080651}{Reconsidering the Effects of Education on Political Participation} by Cindy Kam and Carl Palmer. In their original 2008 study, Kam and Palmer argue that college education has no effect on later political participation, and use the propensity score matching to show that pre-college political activity drives selection into college and later political participation. Henderson and Chatfield in their 2011 paper argue that the use of the propensity score matching in this context is inappropriate because of the bias that arises from small changes in the choice of variables used to model the propensity score. They use \href{http://sekhon.berkeley.edu/papers/GenMatch.pdf}{genetic matching} (at that point a new method), which uses an approach similar to optimal matching to optimize Mahalanobis distance weights. Even with genetic matching, they find that balance remains elusive however, thus leaving open the question of whether education causes political participation.
